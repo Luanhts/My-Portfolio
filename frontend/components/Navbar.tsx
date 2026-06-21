@@ -7,9 +7,9 @@ export function Navbar() {
         {/* LOGO / BRANDING */}
         <div className="flex items-center gap-2">
           <div className="flex h-8 w-8 items-center justify-center rounded-lg border border-zinc-800 bg-zinc-900 font-bold text-zinc-50 text-sm">
-            DV
+            LH
           </div>
-          <span className="text-zinc-400 font-medium text-sm">/ portfolio</span>
+          <span className="text-zinc-400 font-medium text-sm">/ Luanhts</span>
         </div>
 
         {/* NAVEGAÇÃO CENTRAL */}
