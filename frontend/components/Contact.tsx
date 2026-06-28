@@ -43,7 +43,7 @@ export function Contact() {
 
           {/* Botão LinkedIn */}
           <a
-            href="https://linkedin.com/in/seu-perfil"
+            href="https://www.linkedin.com/in/luanhenriquets/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#121214]/40 border border-zinc-800/80 hover:border-zinc-700 hover:text-zinc-200 text-zinc-400 text-sm font-medium rounded-xl transition-all duration-300"
