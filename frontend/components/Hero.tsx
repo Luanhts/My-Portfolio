@@ -14,10 +14,10 @@ export function Hero() {
       </div>
 
       {/* TÍTULO PRINCIPAL (H1 & H2 combinados) */}
-      <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-zinc-50 mb-4">
-        Desenvolvedor Front-end
+      <h1 className="text-4xl sm:text-5xl md:text-5xl font-bold tracking-tight text-zinc-50 mb-4">
+        Desenvolvedor de Software Júnior
       </h1>
-      <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-zinc-500 mb-8">
+      <h2 className="text-3xl sm:text-4xl md:text-3xl font-bold tracking-tight text-zinc-500 mb-8">
         Construindo interfaces modernas e escaláveis.
       </h2>
 
