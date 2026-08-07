@@ -3,7 +3,7 @@ export function Contact() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <section className="border-1 text-white pt-24 pb-12 px-6 md:px-12 lg:px-24">
+    <section id="contato" className="scroll-mt-32 md:scroll-mt-28 border-t border-zinc-900 text-white pt-24 pb-12 px-6 md:px-12 lg:px-24">
       <div className="max-w-6xl mx-auto flex flex-col items-center text-center gap-8">
         {/* Identificador da Seção */}
         <div className="flex items-center gap-3 text-xs tracking-widest text-zinc-500 uppercase justify-center">

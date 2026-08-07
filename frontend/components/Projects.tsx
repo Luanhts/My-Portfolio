@@ -9,6 +9,8 @@ interface ProjetoItem {
   deployUrl?: string;
 }
 
+const hasValidUrl = (url?: string) => Boolean(url && url !== "#");
+
 export function Projects() {
   const projects: ProjetoItem[] = [
     {
@@ -32,7 +34,7 @@ export function Projects() {
   ];
 
   return (
-    <section className="border-bottom-1 text-white py-20 px-6 md:px-12 lg:px-24">
+    <section id="projetos" className="scroll-mt-32 md:scroll-mt-28 border-b border-zinc-900 text-white py-20 px-6 md:px-12 lg:px-24">
       <div className="max-w-6xl mx-auto flex flex-col gap-8">
         {/* Identificador da Seção */}
         <div className="flex items-center gap-3 text-xs tracking-widest text-zinc-500 uppercase">
@@ -84,18 +86,22 @@ export function Projects() {
                       {project.title}
                     </h3>
                     <div className="flex items-center gap-3 text-zinc-500">
-                      {project.githubUrl && (
+                      {hasValidUrl(project.githubUrl) && (
                         <a
                           href={project.githubUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="hover:text-zinc-300 transition-colors"
                           title="Ver repositório"
                         >
                           <Gamepad2 className="w-5 h-5" />{" "}
                         </a>
                       )}
-                      {project.deployUrl && (
+                      {hasValidUrl(project.deployUrl) && (
                         <a
                           href={project.deployUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="hover:text-zinc-300 transition-colors"
                           title="Ver aplicação"
                         >

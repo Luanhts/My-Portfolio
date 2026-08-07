@@ -37,7 +37,7 @@ export function Stacks() {
   ];
 
   return (
-    <section className="border-b text-white py-20 px-6 md:px-12 lg:px-24">
+    <section id="stacks" className="scroll-mt-32 md:scroll-mt-28 border-b border-zinc-900 text-white py-20 px-6 md:px-12 lg:px-24">
       <div className="max-w-6xl mx-auto flex flex-col gap-8">
         {/* Identificador da Seção */}
         <div className="flex items-center gap-3 text-xs tracking-widest text-zinc-500 uppercase">

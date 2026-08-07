@@ -1,6 +1,6 @@
 export function About() {
   return (
-    <section className="border-1 text-white py-20 px-6 md:px-12 lg:px-24">
+    <section id="sobre" className="scroll-mt-32 md:scroll-mt-28 border-y border-zinc-900 text-white py-20 px-6 md:px-12 lg:px-24">
       <div className="max-w-6xl mx-auto flex flex-col gap-8">
         {/* Identificador da Seção */}
         <div className="flex items-center gap-3 text-xs tracking-widest text-zinc-500 uppercase">
