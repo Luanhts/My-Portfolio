@@ -2,51 +2,53 @@ import { ArrowRight } from "lucide-react";
 
 export function Hero() {
   return (
-    <section className="relative flex flex-col items-center justify-center text-center px-4 pt-24 pb-16 md:pt-32 md:pb-24 max-w-4xl mx-auto">
-      {/* BADGE: Disponível para novos projetos */}
-      <div className="inline-flex items-center gap-2 rounded-full border border-zinc-800 bg-zinc-900/30 px-4 py-1.5 text-xs text-zinc-400 font-medium mb-8">
-        <span className="relative flex h-2 w-2">
-          {/* Efeito pulsante discreto */}
-          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-          <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-        </span>
-        Disponível para novos projetos
-      </div>
+    <section
+      id="topo"
+      className="relative mx-auto flex min-h-[calc(100vh-5rem)] max-w-6xl scroll-mt-36 flex-col justify-center px-6 py-20 md:px-12 md:py-28"
+    >
+      <div className="pointer-events-none absolute inset-x-6 top-20 -z-10 h-80 bg-[radial-gradient(circle_at_center,rgba(63,63,70,0.22),transparent_68%)]" />
 
-      {/* TÍTULO PRINCIPAL (H1 & H2 combinados) */}
-      <h1 className="text-4xl sm:text-5xl md:text-5xl font-bold tracking-tight text-zinc-50 mb-4">
-        Desenvolvedor de Software Júnior
-      </h1>
-      <h2 className="text-3xl sm:text-4xl md:text-3xl font-bold tracking-tight text-zinc-500 mb-8">
-        Construindo interfaces modernas e escaláveis.
-      </h2>
+      <div className="grid items-center gap-14 lg:grid-cols-[minmax(0,1.35fr)_minmax(280px,0.65fr)] lg:gap-10">
+        <div>
+          <div className="mb-8 inline-flex w-fit items-center gap-2 rounded-full border border-zinc-800 bg-zinc-900/50 px-4 py-1.5 text-xs font-medium text-zinc-300">
+            <span className="relative flex h-2 w-2">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75 motion-reduce:animate-none" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
+            </span>
+            Disponível para oportunidades front-end
+          </div>
 
-      {/* DESCRIÇÃO DA PROPOSTA DE VALOR */}
-      <p className="text-base sm:text-lg text-zinc-400 max-w-2xl leading-relaxed font-normal mb-10">
-        Engenheiro de software focado em entregar produtos digitais com
-        arquitetura limpa, performance e experiência do usuário em primeiro
-        lugar. Transformo requisitos complexos em interfaces simples, rápidas e
-        mensuráveis.
-      </p>
+          <p className="mb-4 text-sm font-medium uppercase tracking-[0.18em] text-zinc-400">
+            Olá, eu sou Luan Henrique
+          </p>
+          <h1 className="max-w-4xl text-4xl font-bold tracking-[-0.04em] text-zinc-50 sm:text-5xl md:text-6xl">
+            Desenvolvedor front-end que transforma regras complexas em interfaces claras.
+          </h1>
 
-      {/* BOTÕES DE CHAMADA PARA AÇÃO (CTAs) */}
-      <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
-        {/* Botão Primário (Ver Projetos) */}
-        <a
-          href="#projetos"
-          className="inline-flex h-11 w-full sm:w-auto items-center justify-center gap-2 rounded-md bg-zinc-50 px-6 text-sm font-medium text-zinc-950 transition-colors hover:bg-zinc-200 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-zinc-400"
-        >
-          Ver Projetos
-          <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-        </a>
+          <p className="mt-7 max-w-3xl text-base leading-relaxed text-zinc-300 sm:text-lg md:text-xl">
+            Estudante de Engenharia de Software com 1 ano como Estagiário Front-end
+            no Sicredi. Trabalho na construção e evolução de interfaces com atenção
+            à qualidade do código, consistência visual e experiência de uso.
+          </p>
 
-        {/* Botão Secundário (Entrar em Contato) */}
-        <a
-          href="#contato"
-          className="inline-flex h-11 w-full sm:w-auto items-center justify-center rounded-md border border-zinc-850 bg-zinc-950 px-6 text-sm font-medium text-zinc-50 transition-colors hover:bg-zinc-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-zinc-400"
-        >
-          Entrar em Contato
-        </a>
+          <div className="mt-10 flex w-full flex-col items-stretch gap-4 sm:w-auto sm:flex-row sm:items-center">
+            <a
+              href="#projetos"
+              className="group inline-flex h-11 items-center justify-center gap-2 rounded-md bg-zinc-50 px-6 text-sm font-medium text-zinc-950 transition-colors hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-400"
+            >
+              Ver projetos
+              <ArrowRight className="size-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
+            </a>
+
+            <a
+              href="#experiencia"
+              className="inline-flex h-11 items-center justify-center rounded-md border border-zinc-700 bg-zinc-950 px-6 text-sm font-medium text-zinc-100 transition-colors hover:border-zinc-500 hover:bg-zinc-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-400"
+            >
+              Minha experiência
+            </a>
+          </div>
+        </div>
+
       </div>
     </section>
   );

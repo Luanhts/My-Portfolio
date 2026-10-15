@@ -1,67 +1,59 @@
+import { Mail } from "lucide-react";
+import { siteConfig } from "@/lib/site";
 
 export function Contact() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <section id="contato" className="scroll-mt-32 md:scroll-mt-28 border-t border-zinc-900 text-white pt-24 pb-12 px-6 md:px-12 lg:px-24">
-      <div className="max-w-6xl mx-auto flex flex-col items-center text-center gap-8">
-        {/* Identificador da Seção */}
-        <div className="flex items-center gap-3 text-xs tracking-widest text-zinc-500 uppercase justify-center">
-          <span className="w-8 h-[1px] bg-zinc-700"></span>
-          <span>04 — Contato</span>
+    <footer
+      id="contato"
+      className="scroll-mt-36 px-6 pb-10 pt-24 md:px-12 lg:px-24"
+    >
+      <div className="mx-auto flex max-w-6xl flex-col items-center gap-8 text-center">
+        <div className="flex items-center justify-center gap-3 text-xs font-medium uppercase tracking-[0.2em] text-zinc-400">
+          <span className="h-px w-8 bg-zinc-700" aria-hidden="true" />
+          <span>05 / Contato</span>
         </div>
 
-        {/* Textos Principais */}
-        <div className="flex flex-col gap-4 max-w-2xl">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight text-zinc-100">
-            Vamos construir algo juntos.
+        <div className="flex max-w-2xl flex-col gap-4">
+          <h2 className="text-3xl font-bold tracking-tight text-zinc-100 md:text-4xl lg:text-5xl">
+            Vamos conversar sobre oportunidades front-end.
           </h2>
-          <p className="text-base text-zinc-400 max-w-lg mx-auto leading-relaxed">
-            Aberto a oportunidades, colaborações e conversas sobre produto e
-            engenharia.
+          <p className="mx-auto max-w-lg text-base leading-relaxed text-zinc-400">
+            Estou aberto a oportunidades de desenvolvimento front-end. Entre em
+            contato por e-mail ou pelo LinkedIn.
           </p>
         </div>
 
-        {/* Grupo de Botões/Links */}
-        <div className="flex flex-wrap items-center justify-center gap-3 mt-4">
-          {/* Botão E-mail */}
+        <div className="mt-4 flex flex-wrap items-center justify-center gap-3">
           <a
-            href="mailto:seu-email@dominio.com"
-            className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#121214]/40 border border-zinc-800/80 hover:border-zinc-700 hover:text-zinc-200 text-zinc-400 text-sm font-medium rounded-xl transition-all duration-300"
+            href={`mailto:${siteConfig.email}`}
+            className="inline-flex items-center gap-2 rounded-xl bg-zinc-100 px-5 py-2.5 text-sm font-medium text-zinc-950 transition-colors hover:bg-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-400"
           >
-            <svg
-              className="w-4 h-4 stroke-current"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="2"
-            >
-              <rect width="20" height="16" x="2" y="4" rx="2" />
-              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
-            </svg>
+            <Mail className="size-4" aria-hidden="true" />
             <span>E-mail</span>
           </a>
 
-          {/* Botão LinkedIn */}
           <a
-            href="https://www.linkedin.com/in/luanhenriquets/"
+            href={siteConfig.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#121214]/40 border border-zinc-800/80 hover:border-zinc-700 hover:text-zinc-200 text-zinc-400 text-sm font-medium rounded-xl transition-all duration-300"
+            className="inline-flex items-center gap-2 rounded-xl border border-zinc-700 px-5 py-2.5 text-sm font-medium text-zinc-200 transition-colors hover:border-zinc-500 hover:bg-zinc-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-400"
           >
-            <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+            <svg className="h-4 w-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
             </svg>
             <span>LinkedIn</span>
+            <span className="sr-only"> (abre em uma nova aba)</span>
           </a>
 
-          {/* Botão GitHub */}
           <a
-            href="https://github.com/Luanhts"
+            href={siteConfig.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-5 py-2.5 bg-[#121214]/40 border border-zinc-800/80 hover:border-zinc-700 hover:text-zinc-200 text-zinc-400 text-sm font-medium rounded-xl transition-all duration-300"
+            className="inline-flex items-center gap-2 rounded-xl border border-zinc-700 px-5 py-2.5 text-sm font-medium text-zinc-200 transition-colors hover:border-zinc-500 hover:bg-zinc-900 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-400"
           >
-            <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+            <svg className="h-4 w-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
               <path
                 fillRule="evenodd"
                 clipRule="evenodd"
@@ -69,16 +61,16 @@ export function Contact() {
               />
             </svg>
             <span>GitHub</span>
+            <span className="sr-only"> (abre em uma nova aba)</span>
           </a>
         </div>
 
-        {/* Footer Divisor e Copyright */}
-        <div className="w-full mt-16 pt-8 border-t border-zinc-900 flex flex-col items-center">
-          <p className="text-xs text-zinc-600 tracking-wide font-light">
-            © {currentYear} — Construído com cuidado e atenção aos detalhes.
+        <div className="mt-16 flex w-full flex-col items-center border-t border-zinc-900 pt-8">
+          <p className="text-xs font-light tracking-wide text-zinc-400">
+            © {currentYear} / Construído com cuidado e atenção aos detalhes.
           </p>
         </div>
       </div>
-    </section>
+    </footer>
   );
 }
