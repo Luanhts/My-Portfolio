@@ -17,10 +17,10 @@ export function Contact() {
 
         <div className="flex max-w-2xl flex-col gap-4">
           <h2 className="text-3xl font-bold tracking-tight text-zinc-100 md:text-4xl lg:text-5xl">
-            Vamos conversar sobre oportunidades front-end.
+            Vamos conversar?
           </h2>
           <p className="mx-auto max-w-lg text-base leading-relaxed text-zinc-400">
-            Estou aberto a oportunidades de desenvolvimento front-end. Entre em
+            Estou aberto a oportunidades de desenvolvimento. Entre em
             contato por e-mail ou pelo LinkedIn.
           </p>
         </div>
